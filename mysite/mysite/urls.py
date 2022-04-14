@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('display/', include('covid19_map.urls')),
+    path('map/', include('covid19_map.urls')),
     path('admin/', admin.site.urls),
 ]

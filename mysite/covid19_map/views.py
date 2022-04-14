@@ -6,5 +6,5 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello, world. You're at the display index.")
 
-def map(request):
+def display(request):
     return render(request, "covid19_map/index.html")
