@@ -1,0 +1,117 @@
+body {
+    background-color: #00b1b7;
+}
+
+.main {
+    width: 85rem;
+    padding-top: 0.90625rem;
+    padding-bottom: 3.90625rem;
+    margin: 3.90625rem auto;
+    background-color: #fff;
+    border-radius: 0.5020833rem;
+}
+
+.main header ul {
+    height: 3rem;
+    display: flex;
+    border-bottom: 0.2rem solid #f5f6f7;
+}
+.main header ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+    margin-top: 0.5rem;
+}
+.main header ul li a {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    color: #00b1b7;
+}
+
+.main .details {
+    padding: 0 0.2rem;
+}
+
+.main .details .time {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #999999;
+    margin: 0.4rem 0.2rem 0.8rem;
+}
+.main .details .info {
+    display: flex;
+    flex-wrap: wrap;
+    height: 13rem;
+}
+
+.main .details .info li {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.main .details .info li h5 {
+    font-size: 1.6rem;
+    color: #333333;
+    font-weight: normal;
+}
+
+.main .details .info li p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0.104rem 0 0.026rem;
+}
+
+.main .details .info li span {
+    display: flex;
+    justify-content: center;
+    font-size: 0.5rem;
+}
+
+.main .details .info li em {
+    font-size: 1rem;
+    color: #999999;
+}
+
+.main .details .info li i {
+    font-size: 1rem;
+}
+
+.main .china_map {
+    height: 90rem;
+    padding: 1rem 0.5rem 0;
+    background-color: #f8f9fa;
+}
+.main .china_map nav {
+    height: 3rem;
+    border-radius: 0.06510417rem;
+    background-color: #e2e6eb;
+    display: flex;
+    padding: 0.02604167rem;
+    box-sizing: border-box;
+}
+.main .china_map nav a {
+    font-size: 1.5rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.main .china_map nav a.active {
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 0.0390625rem;
+}
+.main .china_map .title {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #666;
+}
+.main .china_map .content {
+    height: 100rem;
+}
