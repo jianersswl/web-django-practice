@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('map/', include('covid19_map.urls')),
+    path('planetxxx/', include('planetxxx.urls')),
     path('admin/', admin.site.urls),
 ]

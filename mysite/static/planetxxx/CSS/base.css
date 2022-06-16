@@ -1,0 +1,71 @@
+/* 清除默认样式的代码 */
+
+/* clear margin  and padding */
+* {
+	margin:0px;
+	padding: 0px;
+}
+
+/* border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* base font */
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+    color: #333;
+}
+
+/* no list style */
+ul, 
+ol {
+    list-style: none;
+}
+
+/* no italic */
+em,
+i {
+    font-style: normal;
+}
+/* no underline and red color */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* img vertical align */
+img {
+    vertical-align: middle;
+}
+
+/* clear input */
+input {
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+/* float */
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+/* position */
+.relative {
+    position: relative;
+}
+
+/* clear float */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
