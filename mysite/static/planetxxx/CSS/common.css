@@ -1,0 +1,270 @@
+
+
+/* container */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    height: 52px;
+    width: auto;
+    background-color: #333;
+}
+.shortcut .wrapper li {
+    /* width: 150px; */
+    text-align: center;
+    line-height: 52px;
+    font-size: 1.2em;
+}
+.shortcut .wrapper li a {
+    color: aliceblue;
+    padding: 0 20px;
+    border-right: 1px solid rgb(222, 229, 235);
+}
+.shortcut .wrapper li:hover {
+    background-color: rgb(68, 68, 68);
+}
+.shortcut .wrapper li:last-child a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-image: url("../images/icon/sakura.png");
+    background-position: -500px -500px;
+}
+.shortcut .wrapper li:last-child a{
+    border: 0;
+}
+
+.header {
+    height: 150px;
+    background-color:aliceblue;
+}
+
+.header .logo {
+    width: 260px;
+    text-align: center;
+    line-height: 150px;
+}
+.header .logo a {
+    font-size: 28px;
+}
+
+.header .nav {
+    text-align: center;
+    line-height: 150px;
+    margin-left: 30px;
+}
+.header .nav li {
+    padding: 0 20px;
+}
+.header .nav li a{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.header .nav li:hover a{
+    color: rgb(78, 221, 185);
+    font-weight: bolder;
+    border-bottom: rgb(78, 221, 185) solid 1px;
+}
+
+.header .search {
+    margin-left: 10px;
+    line-height: 150px;
+}
+
+/* .header .search span img {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(255,255,255);
+} */
+/* .header .search span:first-child {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    background-image: url(../images/search.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-color: rgb(255,255,255);
+} */
+.header .search::before {
+    content: '';
+    /* display: inline-block; */
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-image: url(../images/search.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-color: rgb(255,255,255);
+}
+
+.header .search span input {
+    width: 150px;
+    height: 35px;
+    padding: 0 0 0 35px;
+}
+.header .search span input::placeholder {
+    color:rgb(184, 189, 194)
+}
+
+.header .bag {
+    width: 40px;
+    height: 150px;
+    line-height: 150px;
+    margin-left: 20px;
+}
+/* .header .bag img {
+    width: 40px;
+    height: 40px;
+} */
+
+.header .bag a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/bag1.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    /* ???? */
+    /* line-height: 20px; */
+}
+
+/* .header .bag a .baglogo{
+    width: 40px;
+    height: 40px;
+    position: absolute; */
+    /* ancestor without shape will be novalid with 50% */
+    /* left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-image: url(../images/bag1.png);
+    background-size: 40px;
+    background-repeat: no-repeat; 
+} */
+
+.header .bag a::after {
+    content: '123';
+    /* display: inline-block; */
+    height: 20px;
+    position: absolute;
+    /* ancestor without shape will be novalid with 50% */
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -125%);
+    /* background-image: url(../images/1.jpg);  */
+    /* background-size: 15px; */
+    /* background-repeat: no-repeat; */
+    line-height: 22px;
+    padding: 0 5px;
+    background-color: red;
+    color: rgb(255,255,255);
+    font-size: 2px;
+    border-radius: 40%;
+}
+/* .header .bag .tipnumber { */
+    /* display: inline-block; */
+    /* height: 20px; */
+    /* 行高会继承 ancestor 的，当有文字需求时，行高继承爹的大于本元素的高，文字就会不见了*/
+    /* line-height: 20px; */
+    /* padding: 0 5px; */
+    /* position: absolute; */
+    /* ancestor without shape will be novalid with 50% */
+    /* left: 100%; */
+    /* top: 50%; */
+    /* transform: translate(-100%, -125%); */
+    /* background-color: red; */
+    /* color: rgb(255,255,255); */
+    /* border-radius: 40%; */
+    /* font-size: 1px; */
+/* } */
+
+.footer {
+    height:300px;
+    background-color: #333;
+}
+
+.footer .wrapper .top {
+    width: 1240px;
+    height: 200px;
+    /* background-color: beige; */
+    border-bottom: 2px solid rgba(208, 218, 226, 0.836);
+    /* box-sizing: content-box; */
+}
+.footer .wrapper .top ul li {
+    width: 400px;
+    height: 150px;
+    margin-right: 20px;
+    line-height: 150px;
+}
+
+/* .footer .wrapper .top li:first-child {
+    background-image: url("../images/dog-100.png");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+} */
+.footer .wrapper .top li:nth-child(1)::before {
+    content: '';
+    display: inline-block;
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/dog-100.png");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    color: aliceblue;
+    line-height: 50px;
+}
+.footer .wrapper .top li:nth-child(2){
+    background-image: url("../images/cat-100.png");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+}
+.footer .wrapper .top li:nth-child(3) {
+    background-image: url("../images/corgi-100.png");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    margin-right: 0;
+}
+.footer .wrapper .top li h1 {
+    position: absolute;
+    /* width: 100px; */
+    left: 150px;
+    top: 35px;
+}
+.footer .wrapper .top li h1 a {
+    color: aliceblue;
+    font-size: 30px;
+}
+.footer .wrapper .bottom {
+    /* background-color:beige; */
+    color: rgba(229, 237, 243, 0.836);
+}
+.footer .wrapper .bottom ul li {
+    float: left;
+    margin-top: 20px;
+}
+.footer .wrapper .bottom ul li a {
+    padding: 0 10px;
+    border-right: rgba(208, 218, 226, 0.836) solid 1px;
+    color: rgba(229, 237, 243, 0.836);
+    font-size: 20px;
+}
+.footer .wrapper .bottom ul li:last-child a {
+    border-right: 0;
+}
+.footer .wrapper .bottom span {
+    position: absolute;
+    left: 82.5%;
+    transform: translate(0,190%);
+    font-size: 20px;
+}
